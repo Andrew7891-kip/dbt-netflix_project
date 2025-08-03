@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: MOVIELENS
+    schema: DEV
+    tables:
+      - name: orders
+
+models:
+  - name: example_model
+    description: "Orders after Jan 2024"
+    columns:
+      - name: id
+        description: "Order ID"
